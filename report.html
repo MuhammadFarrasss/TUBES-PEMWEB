@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Kerusakan - Sagara Daily Checkup</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Sagara Daily Checkup</h1>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="report.html">Buat Laporan</a>
+            <a href="login.html">Logout</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <h2>Buat Laporan Kerusakan</h2>
+
+            <p>
+                Isi formulir berikut untuk melaporkan kendala atau kerusakan kendaraan.
+            </p>
+
+            <form action="detail.html">
+
+                <p>
+                    <label for="merek">Merek Kendaraan</label><br>
+
+                    <input
+                        type="text"
+                        id="merek"
+                        name="merek"
+                        value="Toyota Avanza"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="plat">Nomor Polisi</label><br>
+
+                    <input
+                        type="text"
+                        id="plat"
+                        name="plat"
+                        value="B 1234 SDC"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="jenis-kendala">Jenis Kendala</label><br>
+
+                    <select
+                        id="jenis-kendala"
+                        name="jenis-kendala"
+                        required
+                    >
+
+                        <option value="">Pilih Kendala</option>
+                        <option value="mesin">Mesin</option>
+                        <option value="rem">Rem</option>
+                        <option value="ban">Ban</option>
+                        <option value="kelistrikan">Kelistrikan</option>
+                        <option value="lainnya">Lainnya</option>
+
+                    </select>
+                </p>
+
+                <p>
+                    <label for="deskripsi">Deskripsi Kendala</label><br>
+
+                    <textarea
+                        id="deskripsi"
+                        name="deskripsi"
+                        rows="6"
+                        cols="50"
+                        required
+                    ></textarea>
+                </p>
+
+                <p>
+                    <label for="catatan">Catatan Tambahan</label><br>
+
+                    <textarea
+                        id="catatan"
+                        name="catatan"
+                        rows="4"
+                        cols="50"
+                    ></textarea>
+                </p>
+
+                <p>
+                    <label for="foto">Foto Kerusakan</label><br>
+
+                    <input
+                        type="file"
+                        id="foto"
+                        name="foto"
+                        accept="image/*"
+                    >
+                </p>
+
+                <button type="submit">
+                    Kirim Laporan
+                </button>
+
+                <a href="index.html">
+                    Batal
+                </a>
+
+            </form>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Sagara Daily Checkup</p>
+    </footer>
+
+</body>
+</html>
