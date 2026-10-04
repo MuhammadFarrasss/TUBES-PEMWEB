@@ -3,58 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Driver - Sagara Daily Checkup</title>
+    <title>Login - Sagara Daily Checkup</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Sagara Daily Checkup</h1>
+<header>
+    <h1>Sagara Daily Checkup</h1>
 
-        <nav>
-            <a href="login.html">Login</a>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="report.html">Buat Laporan</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
+<main>
+    <article>
+        <h2>Login Driver</h2>
 
-        <article>
-            <h2>Login Driver</h2>
+        <div class="info-box">
+            <p>Silakan masukkan akun untuk mengakses sistem.</p>
+        </div>
 
-            <p>Silakan masuk menggunakan akun driver untuk mengakses sistem.</p>
+        <form action="index.html" method="get">
 
-            <form action="index.html">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
 
-                <p>
-                    <label for="username">Username</label><br>
-                    <input
-                        type="text"
-                        id="username"
-                        name="username"
-                        required
-                    >
-                </p>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
 
-                <p>
-                    <label for="password">Password</label><br>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        required
-                    >
-                </p>
+            <button type="submit">Login</button>
 
-                <button type="submit">Login</button>
+        </form>
+    </article>
+</main>
 
-            </form>
-        </article>
-
-    </main>
-
-    <footer>
-        <p>Sagara Daily Checkup</p>
-    </footer>
+<footer>
+    <p>Sagara Daily Checkup &copy; 2026</p>
+</footer>
 
 </body>
 </html>

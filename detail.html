@@ -4,130 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Laporan - Sagara Daily Checkup</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+<header>
+    <h1>Sagara Daily Checkup</h1>
 
-        <h1>Sagara Daily Checkup</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="report.html">Buat Laporan</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <nav>
-            <a href="index.html">Dashboard</a>
-            <a href="report.html">Buat Laporan</a>
-            <a href="login.html">Logout</a>
-        </nav>
+<main>
 
-    </header>
+    <article>
+        <h2>Detail Laporan Kerusakan</h2>
 
-    <main>
+        <div class="info-box">
+            <p><span>Tanggal:</span> 01 Oktober 2026</p>
+            <p><span>Kendaraan:</span> Toyota Avanza</p>
+            <p><span>Nomor Kendaraan:</span> D 1234 ABC</p>
+            <p><span>Jenis Kerusakan:</span> Ban bocor</p>
+            <p><span>Status:</span> <span class="status">Menunggu</span></p>
+        </div>
 
-        <article>
+        <h3>Deskripsi Kerusakan</h3>
 
-            <h2>Detail Laporan Kerusakan</h2>
+        <p>
+            Ban kendaraan mengalami kebocoran saat digunakan.
+            Kendaraan perlu dilakukan pemeriksaan oleh teknisi.
+        </p>
 
-            <p>
-                Informasi lengkap mengenai laporan kerusakan kendaraan.
-            </p>
+        <h3>Riwayat Laporan</h3>
 
-            <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Status</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
 
-                <h3>Informasi Kendaraan</h3>
+            <tbody>
+                <tr>
+                    <td>01 Oktober 2026</td>
+                    <td>Menunggu</td>
+                    <td>Laporan dibuat oleh driver</td>
+                </tr>
 
-                <img
-                    src="assets/images/kendaraan.jpg"
-                    alt="Toyota Avanza dengan nomor polisi B 1234 SDC"
-                    width="300"
-                >
+                <tr>
+                    <td>02 Oktober 2026</td>
+                    <td>Diproses</td>
+                    <td>Menunggu pemeriksaan teknisi</td>
+                </tr>
+            </tbody>
+        </table>
 
-                <p>
-                    <strong>Merek Kendaraan:</strong>
-                    Toyota Avanza
-                </p>
+        <p>
+            <a href="index.html">Kembali ke Dashboard</a>
+        </p>
 
-                <p>
-                    <strong>Nomor Polisi:</strong>
-                    B 1234 SDC
-                </p>
+    </article>
 
-            </section>
+</main>
 
-            <section>
-
-                <h3>Informasi Laporan</h3>
-
-                <p>
-                    <strong>Tanggal Laporan:</strong>
-                    1 Oktober 2026
-                </p>
-
-                <p>
-                    <strong>Jenis Kendala:</strong>
-                    Rem
-                </p>
-
-                <p>
-                    <strong>Deskripsi:</strong>
-                    Rem kendaraan terasa kurang responsif ketika digunakan.
-                </p>
-
-                <p>
-                    <strong>Catatan:</strong>
-                    Kendala mulai terasa setelah kendaraan digunakan dalam perjalanan jauh.
-                </p>
-
-                <p>
-                    <strong>Status:</strong>
-                    Menunggu Persetujuan
-                </p>
-
-            </section>
-
-            <section>
-
-                <h3>Riwayat Status</h3>
-
-                <table border="1">
-
-                    <thead>
-                        <tr>
-                            <th>Tanggal</th>
-                            <th>Status</th>
-                            <th>Keterangan</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                            <td>1 Oktober 2026</td>
-                            <td>Laporan Dibuat</td>
-                            <td>Laporan dikirim oleh driver</td>
-                        </tr>
-
-                        <tr>
-                            <td>1 Oktober 2026</td>
-                            <td>Menunggu Persetujuan</td>
-                            <td>Menunggu pemeriksaan dari admin</td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </section>
-
-            <p>
-                <a href="index.html">Kembali ke Dashboard</a>
-            </p>
-
-        </article>
-
-    </main>
-
-    <footer>
-        <p>Sagara Daily Checkup</p>
-    </footer>
+<footer>
+    <p>Sagara Daily Checkup &copy; 2026</p>
+</footer>
 
 </body>
 </html>
