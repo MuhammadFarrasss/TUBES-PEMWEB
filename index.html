@@ -1,85 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Sagara Daily Checkup</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-    <h1>Sagara Daily Checkup</h1>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Dashboard</a></li>
-            <li><a href="report.html">Buat Laporan</a></li>
-            <li><a href="data-kendaraan.html">Data Kendaraan</a></li>
-            <li><a href="riwayat-pemeriksaan.html">Riwayat Pemeriksaan</a></li>
-            <li><a href="jadwal-servis.html">Jadwal Servis</a></li>
-            <li><a href="login.html">Logout</a></li>
-            
-        </ul>
-    </nav>
-</header>
-
-<main>
-
-    <article>
-        <h2>Dashboard Driver</h2>
-
-        <div class="info-box">
-            <p><span>Nama Driver:</span> Ahmad</p>
-            <p><span>Kendaraan:</span> Toyota Avanza</p>
-            <p><span>Nomor Kendaraan:</span> D 1234 ABC</p>
-        </div>
-    </article>
-
-    <article>
-        <h2>Daftar Laporan Kerusakan</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Tanggal</th>
-                    <th>Kendaraan</th>
-                    <th>Kerusakan</th>
-                    <th>Status</th>
-                    <th>Detail</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>01 Oktober 2026</td>
-                    <td>Toyota Avanza</td>
-                    <td>Ban bocor</td>
-                    <td><span class="status">Menunggu</span></td>
-                    <td><a href="detail.html">Lihat</a></td>
-                </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td>28 September 2026</td>
-                    <td>Toyota Avanza</td>
-                    <td>Rem berbunyi</td>
-                    <td><span class="status">Diproses</span></td>
-                    <td><a href="detail.html">Lihat</a></td>
-                </tr>
-            </tbody>
-        </table>
-
-    </article>
-
-</main>
-
-<footer>
-    <p>Sagara Daily Checkup &copy; 2026</p>
-</footer>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sagara Daily Checkup</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
